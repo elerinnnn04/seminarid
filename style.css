@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&family=Roboto&display=swap');
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-35%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+table, th, td {
+    border: 1px solid black;
+}
+body {
+    background-color: lightyellow;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.25rem;
+}
+h1 {
+    font-family: 'Roboto';
+    color: pink;
+    text-align: center;
+    font-size: 3rem;
+}
+table th {
+    color: pink;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+img {
+    border: 5px solid pink;
+    box-shadow: 19px 11px 5px 1px rgba(0,0,0,0.81);
+    animation: 1.5s ease-out 0s 1 slideInFromTop;
+}
